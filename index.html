@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Penjualan Ternak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="kalkulator" class="container">
+        <h1>Kalkulator Penjualan Ternak Utuh</h1>
+        <label for="tanggal1">Tanggal:</label>
+        <input type="text" id="tanggal1" readonly>
+
+        <label for="jenisTernak1">Jenis Ternak:</label>
+        <select id="jenisTernak1">
+            <option value="sapi">Sapi</option>
+            <option value="kambing">Kambing</option>
+            <option value="ayam">Ayam</option>
+        </select>
+
+        <label for="harga1">Harga (Rp):</label>
+        <input type="number" id="harga1" placeholder="Masukkan harga" required>
+
+        <label for="jumlah1">Jumlah:</label>
+        <input type="number" id="jumlah1" placeholder="Masukkan jumlah" required>
+
+        <button id="hitung1">Hitung Total</button>
+        <div class="result" id="result1"></div>
+
+        <button id="tambahTernak">Tambah ke Tabel Ternak Utuh</button>
+    </div>
+
+    <div id="kalkulatorBagian" class="container">
+        <h1>Kalkulator Penjualan Bagian Ternak</h1>
+        <label for="tanggal2">Tanggal:</label>
+        <input type="text" id="tanggal2" readonly>
+
+        <label for="produk">Produk yang Dijual:</label>
+        <select id="produk">
+            <option value="telur">Telur</option>
+            <option value="daging">Daging</option>
+            <option value="tulang">Tulang</option>
+            <option value="kulit">Kulit</option>
+            <option value="jeroan">Jeroan</option>
+        </select>
+
+        <label for="harga2">Harga (Rp):</label>
+        <input type="number" id="harga2" placeholder="Masukkan harga" required>
+
+        <label for="jumlah2">Jumlah:</label>
+        <input type="number" id="jumlah2" placeholder="Masukkan jumlah" required>
+
+        <button id="hitung2">Hitung Total</button>
+        <div class="result" id="result2"></div>
+
+        <button id="tambahBagian">Tambah ke Tabel Bagian Ternak</button>
+    </div>
+
+    <div id="hasilPenjualan" class="container">
+        <h1>Hasil Penjualan Ternak Utuh</h1>
+        <table id="tabelTernakUtuh">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Jenis Ternak</th>
+                    <th>Harga (Rp)</th>
+                    <th>Jumlah</th>
+                    <th>Total (Rp)</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="kembali">Kembali ke Kalkulator</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
